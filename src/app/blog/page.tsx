@@ -32,7 +32,7 @@ export default function BlogPage() {
                 <div className="relative h-48 overflow-hidden">
                   <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                   <div className="absolute top-3 left-3">
-                    <span className="gradient-bg text-white text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
+                    <span className="gradient-bg text-slate-900 text-xs font-bold px-3 py-1 rounded-full">{post.category}</span>
                   </div>
                 </div>
                 <div className="p-6">
@@ -40,7 +40,7 @@ export default function BlogPage() {
                     <Calendar className="w-3.5 h-3.5" />
                     <span>{post.publishedDate}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-red-400 transition-colors">{post.title}</h3>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-red-400 transition-colors">{post.title}</h3>
                   <p className="text-text-secondary text-sm line-clamp-3">{post.excerpt}</p>
                   <div className="flex items-center gap-1 mt-4 text-red-400 text-sm font-medium">
                     Read More <ArrowRight className="w-4 h-4" />

@@ -48,7 +48,7 @@ export default function ProductsPage() {
             {filteredProducts.map((product, index) => (
               <motion.div key={product.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
                 <GlassCard className="h-full flex flex-col">
-                  <div className="relative mb-4 bg-white/5 rounded-xl overflow-hidden h-48 flex items-center justify-center">
+                  <div className="relative mb-4 bg-slate-50 rounded-xl overflow-hidden h-48 flex items-center justify-center">
                     {product.image ? (
                       <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                     ) : (
@@ -60,12 +60,12 @@ export default function ProductsPage() {
                   </div>
                   <div className="flex-1">
                     <span className="text-xs text-red-400 font-medium uppercase">{product.brand}</span>
-                    <h3 className="text-lg font-bold text-white mt-1 mb-2">{product.name}</h3>
+                    <h3 className="text-lg font-bold text-slate-900 mt-1 mb-2">{product.name}</h3>
                     <p className="text-text-secondary text-sm mb-3 line-clamp-2">{product.description}</p>
                   </div>
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
-                    <span className="text-sm font-semibold text-white">{product.price}</span>
-                    <a href={`https://wa.me/25765001555?text=${encodeURIComponent('Hello Millennium Infosys! I would like to request a quote for: ' + product.name)}`} target="_blank" rel="noopener noreferrer" className="gradient-bg px-4 py-2 rounded-xl text-xs font-semibold text-white inline-flex items-center hover:shadow-lg hover:shadow-red-500/25 transition-all">Get Quote</a>
+                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-200">
+                    <span className="text-sm font-semibold text-slate-900">{product.price}</span>
+                    <a href={`https://wa.me/25765001555?text=${encodeURIComponent('Hello Millennium Infosys! I would like to request a quote for: ' + product.name)}`} target="_blank" rel="noopener noreferrer" className="gradient-bg px-4 py-2 rounded-xl text-xs font-semibold text-slate-900 inline-flex items-center hover:shadow-lg hover:shadow-red-500/25 transition-all">Get Quote</a>
                   </div>
                 </GlassCard>
               </motion.div>

@@ -30,7 +30,7 @@ export default function TeamSection() {
                 <img src={member.photo} alt={member.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
               ) : (
                 <div className="w-full h-full flex items-center justify-center">
-                  <div className="w-24 h-24 rounded-full gradient-bg flex items-center justify-center text-3xl font-bold text-white">
+                  <div className="w-24 h-24 rounded-full gradient-bg flex items-center justify-center text-3xl font-bold text-slate-900">
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </div>
                 </div>
@@ -38,10 +38,10 @@ export default function TeamSection() {
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary-bg to-transparent h-20" />
             </div>
             <div className="p-5">
-              <h3 className="text-lg font-bold text-white">{member.name}</h3>
+              <h3 className="text-lg font-bold text-slate-900">{member.name}</h3>
               <p className="text-red-400 text-sm font-medium">{member.position}</p>
               <p className="text-text-secondary text-xs mt-1">{member.department} | {member.experience}</p>
-              <div className="flex items-center gap-3 mt-3 pt-3 border-t border-white/5">
+              <div className="flex items-center gap-3 mt-3 pt-3 border-t border-slate-200">
                 <a href={`mailto:${member.email}`} className="text-text-secondary hover:text-red-400 transition-colors">
                   <Mail className="w-4 h-4" />
                 </a>

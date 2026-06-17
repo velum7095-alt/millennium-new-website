@@ -37,7 +37,7 @@ export default function ProjectsPage() {
                     </div>
                   )}
                   <div className="absolute top-3 left-3">
-                    <span className="gradient-bg text-white text-xs font-bold px-3 py-1 rounded-full">{project.category}</span>
+                    <span className="gradient-bg text-slate-900 text-xs font-bold px-3 py-1 rounded-full">{project.category}</span>
                   </div>
                 </div>
                 <div className="p-6">
@@ -47,10 +47,10 @@ export default function ProjectsPage() {
                     <span>|</span>
                     <span>{project.completedDate}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">{project.title}</h3>
                   <p className="text-text-secondary text-sm mb-4">{project.description}</p>
                   {project.testimonial && (
-                    <div className="bg-white/5 rounded-xl p-4 border-l-2 border-red-500">
+                    <div className="bg-slate-50 rounded-xl p-4 border-l-2 border-red-500">
                       <Quote className="w-4 h-4 text-red-400 mb-2" />
                       <p className="text-text-secondary text-sm italic">{project.testimonial}</p>
                     </div>

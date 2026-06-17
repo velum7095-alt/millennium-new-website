@@ -31,9 +31,9 @@ export default function WhyChooseSection() {
               transition={{ delay: index * 0.1 }}
             >
               <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-4 group-hover:shadow-lg group-hover:shadow-red-500/25 transition-shadow">
-                <IconComponent className="w-6 h-6 text-white" />
+                <IconComponent className="w-6 h-6 text-slate-900" />
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
               <p className="text-text-secondary text-sm leading-relaxed">{item.description}</p>
             </motion.div>
           );

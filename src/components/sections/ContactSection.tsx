@@ -34,7 +34,7 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
+          <h3 className="text-2xl font-bold text-slate-900 mb-6">Send us a Message</h3>
           {submitted ? (
             <motion.div
               className="text-center py-12"
@@ -42,9 +42,9 @@ export default function ContactSection() {
               animate={{ opacity: 1, scale: 1 }}
             >
               <div className="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
-                <Send className="w-8 h-8 text-white" />
+                <Send className="w-8 h-8 text-slate-900" />
               </div>
-              <h4 className="text-xl font-bold text-white mb-2">Message Sent!</h4>
+              <h4 className="text-xl font-bold text-slate-900 mb-2">Message Sent!</h4>
               <p className="text-text-secondary">We will get back to you shortly.</p>
             </motion.div>
           ) : (
@@ -56,7 +56,7 @@ export default function ContactSection() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
                 />
                 <input
                   type="email"
@@ -64,7 +64,7 @@ export default function ContactSection() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
                 />
               </div>
               <div className="grid md:grid-cols-2 gap-4">
@@ -73,20 +73,20 @@ export default function ContactSection() {
                   placeholder="Phone Number"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
                 />
                 <input
                   type="text"
                   placeholder="Company Name"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
                 />
               </div>
               <select
                 value={formData.service}
                 onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
+                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-text-secondary focus:outline-none focus:border-red-500/50 transition-colors"
               >
                 <option value="">Select Service</option>
                 <option value="it-equipment">IT Equipment Supply</option>
@@ -103,7 +103,7 @@ export default function ContactSection() {
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors resize-none"
+                className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-text-secondary focus:outline-none focus:border-red-500/50 transition-colors resize-none"
               />
               <GradientButton label="Send Message" type="submit" />
             </form>
@@ -120,10 +120,10 @@ export default function ContactSection() {
           <div className="glass p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0">
-                <Phone className="w-6 h-6 text-white" />
+                <Phone className="w-6 h-6 text-slate-900" />
               </div>
               <div>
-                <h4 className="font-bold text-white mb-1">Call Us</h4>
+                <h4 className="font-bold text-slate-900 mb-1">Call Us</h4>
                 <p className="text-text-secondary">{settings.phone}</p>
               </div>
             </div>
@@ -132,10 +132,10 @@ export default function ContactSection() {
           <div className="glass p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0">
-                <Mail className="w-6 h-6 text-white" />
+                <Mail className="w-6 h-6 text-slate-900" />
               </div>
               <div>
-                <h4 className="font-bold text-white mb-1">Email Us</h4>
+                <h4 className="font-bold text-slate-900 mb-1">Email Us</h4>
                 <p className="text-text-secondary">{settings.email}</p>
               </div>
             </div>
@@ -144,10 +144,10 @@ export default function ContactSection() {
           <div className="glass p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0">
-                <MapPin className="w-6 h-6 text-white" />
+                <MapPin className="w-6 h-6 text-slate-900" />
               </div>
               <div>
-                <h4 className="font-bold text-white mb-1">Visit Us</h4>
+                <h4 className="font-bold text-slate-900 mb-1">Visit Us</h4>
                 <p className="text-text-secondary">{settings.address}</p>
               </div>
             </div>
@@ -156,10 +156,10 @@ export default function ContactSection() {
           <div className="glass p-6 card-hover">
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                <MessageCircle className="w-6 h-6 text-white" />
+                <MessageCircle className="w-6 h-6 text-slate-900" />
               </div>
               <div>
-                <h4 className="font-bold text-white mb-1">WhatsApp</h4>
+                <h4 className="font-bold text-slate-900 mb-1">WhatsApp</h4>
                 <p className="text-text-secondary">+257 6500 1555</p>
                 <a
                   href="https://wa.me/25765001555?text=Hello%20Millennium%20Infosys!%20I%20would%20like%20to%20request%20a%20quote."

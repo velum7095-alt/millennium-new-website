@@ -4,10 +4,9 @@ export const initialHeroData: HeroData = {
   headline: '16 Years of Delivering Trusted Technology Solutions Across Burundi',
   subheading: 'Millennium Infosys Ltd is a leading wholesale and retail technology provider delivering world-class IT equipment, office automation solutions, networking infrastructure, and enterprise technology services since 2010.',
   images: [
-    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80',
-    'https://images.unsplash.com/photo-1498050108023-c51049a46200?w=1920&q=80',
-    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=80',
-    'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80',
+    '/hero/slide1.png',
+    '/hero/slide2.png',
+    '/hero/slide3.png',
   ],
   ctaButtons: [
     { label: 'Request a Quote', link: 'https://wa.me/25765001555?text=Hello%20Millennium%20Infosys!%20I%20would%20like%20to%20request%20a%20quote.', variant: 'primary' },
@@ -25,14 +24,14 @@ export const initialStats: Stat[] = [
 ];
 
 export const initialPartners: Partner[] = [
-  { id: '1', name: 'HP', logo: '', isAuthorized: true },
-  { id: '2', name: 'Lenovo', logo: '', isAuthorized: true },
-  { id: '3', name: 'Hikvision', logo: '', isAuthorized: true },
-  { id: '4', name: 'Hiksemi', logo: '', isAuthorized: true },
-  { id: '5', name: 'Canon', logo: '', isAuthorized: true },
-  { id: '6', name: 'Cisco', logo: '', isAuthorized: true },
-  { id: '7', name: 'APC', logo: '', isAuthorized: true },
-  { id: '8', name: 'Microsoft', logo: '', isAuthorized: true },
+  { id: '1', name: 'HP', logo: '/partners/hp.png', isAuthorized: true },
+  { id: '2', name: 'Lenovo', logo: '/partners/lenovo.png', isAuthorized: true },
+  { id: '3', name: 'Hikvision', logo: '/partners/hikvision.png', isAuthorized: true },
+  { id: '4', name: 'Hiksemi', logo: '/partners/hiksemi.png', isAuthorized: true },
+  { id: '5', name: 'Canon', logo: '/partners/canon.png', isAuthorized: true },
+  { id: '6', name: 'Cisco', logo: '/partners/cisco.png', isAuthorized: true },
+  { id: '7', name: 'APC', logo: '/partners/apc.png', isAuthorized: true },
+  { id: '8', name: 'Microsoft', logo: '/partners/microsoft.png', isAuthorized: true },
   { id: '9', name: 'Seagate', logo: '', isAuthorized: true },
   { id: '10', name: 'Premax', logo: '', isAuthorized: true },
 ];

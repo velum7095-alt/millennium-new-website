@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -32,7 +32,7 @@ export default function HeroSection() {
             transition={{ duration: 1 }}
           />
         </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-bg/95 via-primary-bg/80 to-primary-bg/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/70 to-white/40" />
         <div className="absolute inset-0 hero-gradient" />
       </div>
 
@@ -56,7 +56,7 @@ export default function HeroSection() {
             </motion.div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-balance">
-              <span className="text-white">{heroData.headline.split(' ').slice(0, 4).join(' ')}</span>{' '}
+              <span className="text-slate-900">{heroData.headline.split(' ').slice(0, 4).join(' ')}</span>{' '}
               <span className="gradient-text">{heroData.headline.split(' ').slice(4).join(' ')}</span>
             </h1>
 
@@ -100,7 +100,7 @@ export default function HeroSection() {
                       key={idx}
                       onClick={() => setCurrentImage(idx)}
                       className={`w-3 h-3 rounded-full transition-all ${
-                        idx === currentImage ? 'gradient-bg w-8' : 'bg-white/20 hover:bg-white/40'
+                        idx === currentImage ? 'gradient-bg w-8' : 'bg-slate-300 hover:bg-slate-400'
                       }`}
                     />
                   ))}
@@ -108,15 +108,15 @@ export default function HeroSection() {
                 <div className="flex gap-2">
                   <button
                     onClick={() => setCurrentImage((prev) => (prev - 1 + heroData.images.length) % heroData.images.length)}
-                    className="glass w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
+                    className="glass w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-100 transition-colors"
                   >
-                    <ChevronLeft className="w-5 h-5 text-white" />
+                    <ChevronLeft className="w-5 h-5 text-slate-900" />
                   </button>
                   <button
                     onClick={() => setCurrentImage((prev) => (prev + 1) % heroData.images.length)}
-                    className="glass w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
+                    className="glass w-10 h-10 rounded-full flex items-center justify-center hover:bg-slate-100 transition-colors"
                   >
-                    <ChevronRight className="w-5 h-5 text-white" />
+                    <ChevronRight className="w-5 h-5 text-slate-900" />
                   </button>
                 </div>
               </div>
@@ -131,9 +131,9 @@ export default function HeroSection() {
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
       >
-        <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1">
+        <div className="w-6 h-10 rounded-full border-2 border-slate-400/50 flex items-start justify-center p-1">
           <motion.div
-            className="w-1.5 h-3 bg-white/60 rounded-full"
+            className="w-1.5 h-3 bg-slate-500 rounded-full"
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
           />

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
@@ -24,11 +24,11 @@ export default function LogoCarousel({ items, speed = 30, showBadge = false }: L
 
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-primary-bg to-transparent z-10" />
-      <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-primary-bg to-transparent z-10" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-primary-bg to-transparent z-10" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-primary-bg to-transparent z-10" />
       <motion.div
         ref={scrollerRef}
-        className="flex gap-8 items-center"
+        className="flex gap-6 items-center"
         animate={{ x: [0, -50 * items.length] }}
         transition={{
           x: {
@@ -42,17 +42,17 @@ export default function LogoCarousel({ items, speed = 30, showBadge = false }: L
         {items.map((item) => (
           <div
             key={item.id}
-            className="flex-shrink-0 glass flex flex-col items-center justify-center px-8 py-6 min-w-[180px] card-hover"
+            className="flex-shrink-0 w-[200px] h-[140px] glass flex flex-col items-center justify-center p-5 card-hover"
           >
             {item.logo ? (
-              <img src={item.logo} alt={item.name} className="h-14 w-auto max-w-[140px] object-contain hover:scale-110 transition-transform duration-300" />
+              <img src={item.logo} alt={item.name} className="h-16 w-full object-contain" />
             ) : (
-              <div className="h-14 flex items-center justify-center text-xl font-bold text-text-secondary hover:text-white transition-colors">
+              <div className="h-16 flex items-center justify-center text-lg font-bold text-slate-700 text-center">
                 {item.name}
               </div>
             )}
             {showBadge && (
-              <span className="text-[10px] text-accent-gold font-semibold mt-1 uppercase tracking-wider">Authorized Partner</span>
+              <span className="text-[10px] text-amber-600 font-semibold mt-2 uppercase tracking-wider">Authorized Partner</span>
             )}
           </div>
         ))}

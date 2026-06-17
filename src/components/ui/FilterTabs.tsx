@@ -17,7 +17,7 @@ export default function FilterTabs({ categories, activeCategory, onCategoryChang
         className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
           activeCategory === 'all'
             ? 'gradient-bg text-white shadow-lg shadow-red-500/25'
-            : 'glass text-text-secondary hover:text-white hover:bg-white/10'
+            : 'glass text-text-secondary hover:text-white hover:bg-slate-100'
         }`}
       >
         All
@@ -29,7 +29,7 @@ export default function FilterTabs({ categories, activeCategory, onCategoryChang
           className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
             activeCategory === category.slug
               ? 'gradient-bg text-white shadow-lg shadow-red-500/25'
-              : 'glass text-text-secondary hover:text-white hover:bg-white/10'
+              : 'glass text-text-secondary hover:text-white hover:bg-slate-100'
           }`}
           whileTap={{ scale: 0.95 }}
         >

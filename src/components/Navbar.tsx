@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -41,7 +41,7 @@ export default function Navbar() {
               alt="Millennium Infosys"
               width={180}
               height={45}
-              className="h-10 w-auto group-hover:opacity-90 transition-opacity"
+              className="h-10 w-auto group-hover:opacity-80 transition-opacity"
             />
           </Link>
 
@@ -50,7 +50,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 text-sm font-medium text-text-secondary hover:text-white transition-colors rounded-lg hover:bg-white/5"
+                className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors rounded-lg hover:bg-slate-100"
               >
                 {link.label}
               </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
               href="https://wa.me/25765001555?text=Hello%20Millennium%20Infosys!%20I%20would%20like%20to%20request%20a%20quote."
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 gradient-bg px-5 py-2.5 rounded-xl text-sm font-semibold text-white hover:shadow-lg hover:shadow-red-500/25 transition-all hover:scale-105"
+              className="ml-4 gradient-bg px-5 py-2.5 rounded-xl text-sm font-semibold text-slate-900 hover:shadow-lg hover:shadow-red-500/25 transition-all hover:scale-105"
             >
               Get a Quote
             </a>
@@ -67,7 +67,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsMobileOpen(true)}
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-slate-900 p-2"
           >
             <Menu className="w-6 h-6" />
           </button>

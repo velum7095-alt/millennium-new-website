@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Image from 'next/image';
@@ -30,7 +30,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-secondary-bg border-t border-white/5">
+    <footer className="bg-secondary-bg border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company Info */}
@@ -44,10 +44,10 @@ export default function Footer() {
             />
             <p className="text-text-secondary text-sm leading-relaxed mb-6">{settings.tagline}</p>
             <div className="space-y-3 mb-6">
-              <a href={`tel:${settings.phone}`} className="flex items-center gap-2 text-text-secondary text-sm hover:text-white transition-colors">
+              <a href={`tel:${settings.phone}`} className="flex items-center gap-2 text-text-secondary text-sm hover:text-slate-900 transition-colors">
                 <Phone className="w-4 h-4 text-red-400" /> {settings.phone}
               </a>
-              <a href={`mailto:${settings.email}`} className="flex items-center gap-2 text-text-secondary text-sm hover:text-white transition-colors">
+              <a href={`mailto:${settings.email}`} className="flex items-center gap-2 text-text-secondary text-sm hover:text-slate-900 transition-colors">
                 <Mail className="w-4 h-4 text-red-400" /> {settings.email}
               </a>
               <div className="flex items-start gap-2 text-text-secondary text-sm">
@@ -66,7 +66,7 @@ export default function Footer() {
               {settings.socialLinks.map((link, i) => {
                 const Icon = socialIconMap[link.platform] || Globe;
                 return (
-                  <a key={i} href={link.url} className="w-9 h-9 glass rounded-lg flex items-center justify-center text-text-secondary hover:text-white hover:bg-white/10 transition-colors">
+                  <a key={i} href={link.url} className="w-9 h-9 glass rounded-lg flex items-center justify-center text-text-secondary hover:text-slate-900 hover:bg-slate-100 transition-colors">
                     <Icon className="w-4 h-4" />
                   </a>
                 );
@@ -76,11 +76,11 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-4">Quick Links</h4>
+            <h4 className="text-slate-900 font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-text-secondary text-sm hover:text-white transition-colors">{link.label}</a>
+                  <a href={link.href} className="text-text-secondary text-sm hover:text-slate-900 transition-colors">{link.label}</a>
                 </li>
               ))}
             </ul>
@@ -88,11 +88,11 @@ export default function Footer() {
 
           {/* Product Categories */}
           <div>
-            <h4 className="text-white font-bold mb-4">Products</h4>
+            <h4 className="text-slate-900 font-bold mb-4">Products</h4>
             <ul className="space-y-2">
               {productCategories.slice(0, 8).map((cat) => (
                 <li key={cat.id}>
-                  <a href={`/products/${cat.slug}`} className="text-text-secondary text-sm hover:text-white transition-colors">{cat.name}</a>
+                  <a href={`/products/${cat.slug}`} className="text-text-secondary text-sm hover:text-slate-900 transition-colors">{cat.name}</a>
                 </li>
               ))}
             </ul>
@@ -100,7 +100,7 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-white font-bold mb-4">Newsletter</h4>
+            <h4 className="text-slate-900 font-bold mb-4">Newsletter</h4>
             <p className="text-text-secondary text-sm mb-4">Subscribe for the latest technology updates and offers.</p>
             {subscribed ? (
               <p className="text-green-400 text-sm font-medium">Subscribed successfully!</p>
@@ -112,7 +112,7 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email"
-                  className="flex-1 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder-text-secondary focus:outline-none focus:border-red-500/50"
+                  className="flex-1 px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 text-sm placeholder-text-secondary focus:outline-none focus:border-red-500/50"
                 />
                 <button type="submit" className="gradient-bg px-4 py-2.5 rounded-lg text-white hover:shadow-lg hover:shadow-red-500/25 transition-all">
                   <Send className="w-4 h-4" />
@@ -134,7 +134,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/5">
+      <div className="border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-text-secondary text-sm">{settings.copyrightText}</p>
           <p className="text-text-secondary text-xs">Designed with excellence for Millennium Infosys Ltd</p>

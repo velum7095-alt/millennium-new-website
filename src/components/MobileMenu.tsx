@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -31,10 +31,10 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
           >
             <div className="flex items-center justify-between mb-8">
               <div>
-                <span className="text-lg font-bold text-white">Millennium</span>
+                <span className="text-lg font-bold text-slate-900">Millennium</span>
                 <span className="text-lg font-bold gradient-text ml-1">Infosys</span>
               </div>
-              <button onClick={onClose} className="text-white p-2">
+              <button onClick={onClose} className="text-slate-900 p-2">
                 <X className="w-6 h-6" />
               </button>
             </div>
@@ -49,7 +49,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
                   <Link
                     href={link.href}
                     onClick={onClose}
-                    className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-white/5 rounded-lg transition-colors font-medium"
+                    className="block px-4 py-3 text-text-secondary hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors font-medium"
                   >
                     {link.label}
                   </Link>
@@ -58,7 +58,7 @@ export default function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) 
               <Link
                 href="/contact"
                 onClick={onClose}
-                className="mt-4 gradient-bg px-5 py-3 rounded-xl text-center font-semibold text-white"
+                className="mt-4 gradient-bg px-5 py-3 rounded-xl text-center font-semibold text-slate-900"
               >
                 Get a Quote
               </Link>

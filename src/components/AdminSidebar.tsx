@@ -20,14 +20,14 @@ export default function AdminSidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 min-h-screen bg-secondary-bg border-r border-white/5 flex flex-col">
-      <div className="p-6 border-b border-white/5">
+    <aside className="w-64 min-h-screen bg-secondary-bg border-r border-slate-200 flex flex-col">
+      <div className="p-6 border-b border-slate-200">
         <Link href="/admin" className="flex items-center gap-3">
           <div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
-            <Monitor className="w-5 h-5 text-white" />
+            <Monitor className="w-5 h-5 text-slate-900" />
           </div>
           <div>
-            <span className="text-sm font-bold text-white">Admin Panel</span>
+            <span className="text-sm font-bold text-slate-900">Admin Panel</span>
             <p className="text-xs text-text-secondary">Millennium Infosys</p>
           </div>
         </Link>
@@ -42,8 +42,8 @@ export default function AdminSidebar() {
               href={link.href}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all ${
                 isActive
-                  ? 'gradient-bg text-white shadow-lg shadow-red-500/25'
-                  : 'text-text-secondary hover:text-white hover:bg-white/5'
+                  ? 'gradient-bg text-slate-900 shadow-lg shadow-red-500/25'
+                  : 'text-text-secondary hover:text-slate-900 hover:bg-slate-50'
               }`}
             >
               <Icon className="w-4 h-4" />
@@ -52,8 +52,8 @@ export default function AdminSidebar() {
           );
         })}
       </nav>
-      <div className="p-4 border-t border-white/5">
-        <Link href="/" className="flex items-center gap-2 text-text-secondary hover:text-white text-sm transition-colors">
+      <div className="p-4 border-t border-slate-200">
+        <Link href="/" className="flex items-center gap-2 text-text-secondary hover:text-slate-900 text-sm transition-colors">
           <Home className="w-4 h-4" /> View Website
         </Link>
       </div>

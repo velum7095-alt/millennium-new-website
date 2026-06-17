@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   title: 'Millennium Infosys Ltd - Trusted IT Solutions Provider in Burundi',
   description: 'Millennium Infosys Ltd is Burundi\'s leading wholesale and retail technology provider. IT equipment, office automation, networking, CCTV, and enterprise solutions since 2010.',
   keywords: ['IT Company Burundi', 'Computer Shop Burundi', 'Laptop Supplier Burundi', 'Printer Supplier Burundi', 'CCTV Supplier Burundi', 'Cisco Partner Burundi', 'HP Partner Burundi', 'Lenovo Partner Burundi', 'Office Equipment Burundi', 'Technology Solutions Burundi'],
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     title: 'Millennium Infosys Ltd - Trusted IT Solutions Provider in Burundi',
     description: 'Leading wholesale and retail technology provider delivering world-class IT equipment, office automation, and enterprise solutions since 2010.',

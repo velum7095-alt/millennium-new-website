@@ -18,7 +18,7 @@ export default function AdminDashboard() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold text-white mb-2">Dashboard</h1>
+      <h1 className="text-3xl font-bold text-slate-900 mb-2">Dashboard</h1>
       <p className="text-text-secondary mb-8">Welcome to Millennium Infosys CMS. Manage your website content below.</p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -28,9 +28,9 @@ export default function AdminDashboard() {
             <div key={stat.label} className="glass p-6 card-hover">
               <div className="flex items-center justify-between mb-4">
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${stat.color} flex items-center justify-center`}>
-                  <Icon className="w-6 h-6 text-white" />
+                  <Icon className="w-6 h-6 text-slate-900" />
                 </div>
-                <span className="text-3xl font-bold text-white">{stat.count}</span>
+                <span className="text-3xl font-bold text-slate-900">{stat.count}</span>
               </div>
               <p className="text-text-secondary text-sm">{stat.label}</p>
             </div>
@@ -40,24 +40,24 @@ export default function AdminDashboard() {
 
       <div className="mt-8 grid lg:grid-cols-2 gap-6">
         <div className="glass p-6">
-          <h3 className="text-lg font-bold text-white mb-4">Quick Actions</h3>
+          <h3 className="text-lg font-bold text-slate-900 mb-4">Quick Actions</h3>
           <div className="grid grid-cols-2 gap-3">
-            <a href="/admin/products" className="glass px-4 py-3 text-sm text-text-secondary hover:text-white hover:bg-white/10 rounded-lg transition-colors text-center">Add Product</a>
-            <a href="/admin/team" className="glass px-4 py-3 text-sm text-text-secondary hover:text-white hover:bg-white/10 rounded-lg transition-colors text-center">Add Team Member</a>
-            <a href="/admin/blog" className="glass px-4 py-3 text-sm text-text-secondary hover:text-white hover:bg-white/10 rounded-lg transition-colors text-center">Write Blog Post</a>
-            <a href="/admin/partners" className="glass px-4 py-3 text-sm text-text-secondary hover:text-white hover:bg-white/10 rounded-lg transition-colors text-center">Add Partner</a>
+            <a href="/admin/products" className="glass px-4 py-3 text-sm text-text-secondary hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors text-center">Add Product</a>
+            <a href="/admin/team" className="glass px-4 py-3 text-sm text-text-secondary hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors text-center">Add Team Member</a>
+            <a href="/admin/blog" className="glass px-4 py-3 text-sm text-text-secondary hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors text-center">Write Blog Post</a>
+            <a href="/admin/partners" className="glass px-4 py-3 text-sm text-text-secondary hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors text-center">Add Partner</a>
           </div>
         </div>
         <div className="glass p-6">
-          <h3 className="text-lg font-bold text-white mb-4">Recent Blog Posts</h3>
+          <h3 className="text-lg font-bold text-slate-900 mb-4">Recent Blog Posts</h3>
           <div className="space-y-3">
             {blogPosts.slice(0, 3).map((post) => (
-              <div key={post.id} className="flex items-center justify-between py-2 border-b border-white/5">
+              <div key={post.id} className="flex items-center justify-between py-2 border-b border-slate-200">
                 <div>
-                  <p className="text-white text-sm font-medium">{post.title}</p>
+                  <p className="text-slate-900 text-sm font-medium">{post.title}</p>
                   <p className="text-text-secondary text-xs">{post.publishedDate}</p>
                 </div>
-                <span className="text-xs gradient-bg px-2 py-1 rounded-full text-white">{post.category}</span>
+                <span className="text-xs gradient-bg px-2 py-1 rounded-full text-slate-900">{post.category}</span>
               </div>
             ))}
           </div>

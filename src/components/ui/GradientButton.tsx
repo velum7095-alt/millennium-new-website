@@ -17,7 +17,7 @@ export default function GradientButton({ label, href, variant = 'primary', onCli
 
   const variantClasses = variant === 'primary'
     ? 'gradient-bg text-white hover:shadow-lg hover:shadow-red-500/25 hover:scale-105'
-    : 'glass text-white hover:bg-white/10 hover:border-red-400/30 hover:scale-105';
+    : 'glass text-slate-900 hover:bg-slate-100 hover:border-red-400/30 hover:scale-105';
 
   const content = (
     <motion.span

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import { Target, Eye, Heart } from 'lucide-react';
@@ -33,17 +33,17 @@ export default function AboutSection() {
       <div className="grid md:grid-cols-3 gap-6 mb-16">
         <GlassCard>
           <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-4">
-            <Target className="w-6 h-6 text-white" />
+            <Target className="w-6 h-6 text-slate-900" />
           </div>
-          <h3 className="text-xl font-bold text-white mb-3">Our Mission</h3>
+          <h3 className="text-xl font-bold text-slate-900 mb-3">Our Mission</h3>
           <p className="text-text-secondary leading-relaxed">{aboutData.mission}</p>
         </GlassCard>
 
         <GlassCard>
           <div className="w-12 h-12 gradient-bg-accent rounded-xl flex items-center justify-center mb-4">
-            <Eye className="w-6 h-6 text-white" />
+            <Eye className="w-6 h-6 text-slate-900" />
           </div>
-          <h3 className="text-xl font-bold text-white mb-3">Our Vision</h3>
+          <h3 className="text-xl font-bold text-slate-900 mb-3">Our Vision</h3>
           <p className="text-text-secondary leading-relaxed">{aboutData.vision}</p>
         </GlassCard>
 
@@ -51,7 +51,7 @@ export default function AboutSection() {
           <div className="w-12 h-12 bg-accent-gold/20 rounded-xl flex items-center justify-center mb-4">
             <Heart className="w-6 h-6 text-accent-gold" />
           </div>
-          <h3 className="text-xl font-bold text-white mb-3">Core Values</h3>
+          <h3 className="text-xl font-bold text-slate-900 mb-3">Core Values</h3>
           <ul className="space-y-2">
             {aboutData.coreValues.map((value, idx) => (
               <li key={idx} className="text-text-secondary text-sm flex items-center gap-2">

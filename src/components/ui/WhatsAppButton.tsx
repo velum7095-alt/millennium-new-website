@@ -23,20 +23,20 @@ export default function WhatsAppButton() {
           >
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-3 right-3 text-text-secondary hover:text-white"
+              className="absolute top-3 right-3 text-text-secondary hover:text-slate-900"
             >
               <X className="w-4 h-4" />
             </button>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                <MessageCircle className="w-5 h-5 text-white" />
+                <MessageCircle className="w-5 h-5 text-slate-900" />
               </div>
               <div>
-                <h4 className="font-bold text-white">Millennium Infosys</h4>
+                <h4 className="font-bold text-slate-900">Millennium Infosys</h4>
                 <p className="text-xs text-green-400">Online - Typically replies instantly</p>
               </div>
             </div>
-            <div className="bg-white/5 rounded-xl p-3 mb-4">
+            <div className="bg-slate-50 rounded-xl p-3 mb-4">
               <p className="text-text-secondary text-sm">Hello! How can we help you today? Choose an option below or type your message.</p>
             </div>
             <div className="space-y-2">
@@ -44,7 +44,7 @@ export default function WhatsAppButton() {
                 href={quoteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 w-full gradient-bg hover:shadow-lg hover:shadow-red-500/25 text-white px-4 py-3 rounded-xl text-sm font-medium transition-all"
+                className="flex items-center gap-3 w-full gradient-bg hover:shadow-lg hover:shadow-red-500/25 text-slate-900 px-4 py-3 rounded-xl text-sm font-medium transition-all"
               >
                 <ShoppingCart className="w-4 h-4" />
                 Request a Quote
@@ -53,7 +53,7 @@ export default function WhatsAppButton() {
                 href={chatUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-xl text-sm font-medium transition-colors"
+                className="flex items-center gap-3 w-full bg-green-500 hover:bg-green-600 text-slate-900 px-4 py-3 rounded-xl text-sm font-medium transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 Chat with Us
@@ -65,7 +65,7 @@ export default function WhatsAppButton() {
       </AnimatePresence>
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center shadow-lg shadow-green-500/30 transition-colors"
+        className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-slate-900 flex items-center justify-center shadow-lg shadow-green-500/30 transition-colors"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
