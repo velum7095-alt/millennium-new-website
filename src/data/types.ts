@@ -32,6 +32,9 @@ export interface ProductCategory {
   slug: string;
   icon: string;
   description: string;
+  brands?: string;
+  tags?: string[];
+  image?: string;
 }
 
 export interface Product {
